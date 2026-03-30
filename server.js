@@ -13,8 +13,8 @@ mongoose.connect('mongodb://localhost:27017/brewBoldDB');
 
 // API to get menu items
 app.get('/api/menu', async (req, res) => {
-    const items = await Menu.find();
-    res.json(items);
+    const Menu=await Menu.find();
+    res.json(menu);
 });
 
 // Start Server
