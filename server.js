@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Menu = require('./models/menu');
+const Menu = require('./models/menus');
 
 const app = express();
 app.use(express.json());
@@ -12,9 +12,9 @@ app.use(express.static('public')); // Serves your HTML
 mongoose.connect(process.env.MONGO_URI);
 
 // API to get menu items
-app.get('/api/menu', async (req, res) => {
+app.get('/api/menus', async (req, res) => {
     const Menu=await Menu.find();
-    res.json(menu);
+    res.json(menus);
 });
 
 // Start Server
