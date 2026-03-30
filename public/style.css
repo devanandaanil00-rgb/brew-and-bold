@@ -1,0 +1,5 @@
+body { font-family: 'Arial', sans-serif; margin: 0; background: #f4f1ea; color: #332a24; }
+nav { background: #332a24; color: white; padding: 1rem; text-align: center; }
+.hero { text-align: center; padding: 50px; background: #e6ccb2; }
+#menu-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+.menu-item { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
