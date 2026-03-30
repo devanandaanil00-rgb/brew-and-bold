@@ -12,9 +12,9 @@ app.use(express.static('public')); // Serves your HTML
 mongoose.connect(process.env.MONGO_URI);
 
 // API to get menu items
-app.get('/api/menus', async (req, res) => {
+app.get('/api/menu', async (req, res) => {
     const Menu=await Menu.find();
-    res.json(menus);
+    res.json(menu);
 });
 
 // Start Server
