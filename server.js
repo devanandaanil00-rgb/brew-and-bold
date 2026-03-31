@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI);
 
 // API to get menu items
 app.get("/api/menu", async (req, res) => {
-    const Menu=await menu.find();
+    const menu=await Menu.find();
     res.json(menu);
 });
 
