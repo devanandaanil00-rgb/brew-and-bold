@@ -17,6 +17,13 @@ app.get("/api/menu", async (req, res) => {
     res.json(menu);
 });
 
+app.post("/api/order", (req, res) => {
+  const order = req.body;
+  console.log("New Order:", order);
+
+  res.json({ message: "Order received!" });
+});
+
 // Start Server
 const PORT =process.env.PORT || 3000;
 app.listen(PORT, () => console.log('Server running on port ${PORT}'));
