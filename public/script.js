@@ -1,5 +1,5 @@
 async function fetchMenu() {
-    const response = await fetch('/api/menus');
+    const response = await fetch('/api/menu');
     const data = await response.json();
     const container = document.getElementById('menu-container');
 
